@@ -54,5 +54,5 @@ newFactory.decrement(); // 0
 
 //STRETCH: IIFE + Closure
 const name = ((firstName) => (lastName) =>  `${firstName} ${lastName}`)("Barry");
-console.log(name("Allen"));
-console.log(name("White"));
+console.log(name("Allen")); //Barry Allen
+console.log(name("White")); //Barry White
