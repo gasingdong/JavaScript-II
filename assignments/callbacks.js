@@ -24,7 +24,7 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
 */
 
-//Re-usable variable function for logging simple outputs
+// Re-usable variable function for logging simple outputs
 const log = (label, output) => console.log(label, output);
 
 function getLength(arr, cb) {
