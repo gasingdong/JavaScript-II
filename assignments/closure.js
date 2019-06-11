@@ -53,11 +53,6 @@ newFactory.decrement(); // 1
 newFactory.decrement(); // 0
 
 //STRETCH: IIFE + Closure
-const name = (() => {
-  const firstName = "Barry";
-  return (() => {
-    const lastName = "Allen";
-    return `${firstName} ${lastName}`;
-  })();
-})();
-console.log(name);
+const name = ((firstName) => (lastName) =>  `${firstName} ${lastName}`)("Barry");
+console.log(name("Allen"));
+console.log(name("White"));
